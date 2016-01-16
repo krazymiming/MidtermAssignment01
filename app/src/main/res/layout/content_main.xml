@@ -14,7 +14,7 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
-    <in.wptrafficanalyzer.autocompletetextviewdemo.CustomAutoCompleteTextView
+    <sidespell.tech.midtermassignment01.AutoComplete
         android:id="@+id/autocomplete"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

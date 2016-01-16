@@ -53,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
             "Sri Lankan Rupee",
             "Bangladeshi Taka",
             "Nepalese Rupee",
-            "Afghani",
+            "Afghani Rupee",
             "North Korean Won",
-            "Philippines Won"
+            "Philippines Won",
+            "China Won  "
     };
 
     @Override
@@ -63,10 +64,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-
-
-
 
         setSupportActionBar(toolbar);
 
@@ -76,9 +73,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-
-
-
             }
 
 
@@ -87,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
 
-        for(int i=0;i<10;i++){
+        for(int i=0;i<9;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
             hm.put("txt", countries[i]);
             hm.put("flag", Integer.toString(flags[i]) );
@@ -133,6 +127,28 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+//    @Override
+//    protected void onSaveInstanceState(Bundle outState) {
+//        TextView tvCurrency = (TextView) findViewById(R.id.tv_currency) ;
+//        outState.putString("currency", tvCurrency.getText().toString());
+//        super.onSaveInstanceState(outState);
+//    }
+//
+//    /** A callback method, which is executed when the activity is recreated
+//     * ( eg :  Configuration changes : portrait -> landscape )
+//     */
+//    @Override
+//    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+//        TextView tvCurrency = (TextView) findViewById(R.id.tv_currency) ;
+//        tvCurrency.setText(savedInstanceState.getString("currency"));
+//        super.onRestoreInstanceState(savedInstanceState);
+//    }
+//
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
 
 
     @Override
